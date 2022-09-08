@@ -75,6 +75,9 @@
 }
 
 .btn-copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 1;
   /* width: min-content;
   min-width: 200px; */
@@ -92,7 +95,10 @@
 .btn-copy:hover i {
   color: #000;
 }
-.btn-copy i {
+.btn-copy svg {
+  font-size: 12px;
+  height: 16px;
+  width: 16px;
   color: #0b7285;
   margin-right: 10px;
 }
