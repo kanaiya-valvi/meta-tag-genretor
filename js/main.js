@@ -42,3 +42,10 @@ $("#genrate-btn").click(() => {
     $("#genrated-meta-tags").val(value);
   }
 });
+
+let btnCopy = document.querySelector(".btn-copy");
+btnCopy.addEventListener("click", () => {
+  let txt = document.querySelector("#genrated-meta-tags");
+  txt.select();
+  document.execCommand("Copy");
+});
