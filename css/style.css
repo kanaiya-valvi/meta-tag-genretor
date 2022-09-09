@@ -64,8 +64,6 @@
 #genrate-btn {
   flex: 1;
   padding: 10px 30px;
-  /* width: min-content;
-  min-width: 200px; */
   background-color: #5691f0;
   border: none;
   outline: none;
@@ -79,8 +77,6 @@
   align-items: center;
   justify-content: center;
   flex: 1;
-  /* width: min-content;
-  min-width: 200px; */
   background-color: #c5f6fa;
   border: none;
   outline: none;
@@ -102,11 +98,17 @@
   color: #0b7285;
   margin-right: 10px;
 }
+#genrated-meta-tags:focus {
+  border: 2px solid #5691f0;
+}
 
 @media (max-width: 480px) {
   #meta-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+  .btn-box {
+    flex-direction: column;
   }
 }
