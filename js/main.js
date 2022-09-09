@@ -48,5 +48,4 @@ btnCopy.addEventListener("click", () => {
   let txt = document.querySelector("#genrated-meta-tags");
   txt.select();
   document.execCommand("Copy");
-  // alert("Code Copy Successfuly");
 });
