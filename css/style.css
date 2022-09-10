@@ -130,4 +130,8 @@
   .btn-box {
     flex-direction: column;
   }
+  .popup {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
 }
