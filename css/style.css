@@ -103,21 +103,23 @@
 }
 .popup {
   opacity: 0;
-  position: absolute;
+  position: fixed;
   background-color: #5691f0;
   color: #fff;
   padding: 20px;
   border-radius: 8px;
-  top: 4%;
+  top: 5vh;
   left: 50%;
+  margin: 0 auto;
   transform: translate(-50%, 0);
   z-index: 9999;
   transition: all 0.5s;
 }
 .popup-active {
   opacity: 1;
-  top: 5%;
+  top: 10%;
   left: 50%;
+  margin: 0 auto;
 }
 @media (max-width: 480px) {
   #meta-form {

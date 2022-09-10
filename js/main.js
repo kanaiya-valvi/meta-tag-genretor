@@ -48,4 +48,12 @@ btnCopy.addEventListener("click", () => {
   let txt = document.querySelector("#genrated-meta-tags");
   txt.select();
   document.execCommand("Copy");
+  document.getElementById("popup").classList.add("popup-active");
+  // popUpTimeOut();
+  setTimeout(function () {
+    document.getElementById("popup").classList.remove("popup-active");
+  }, 1000);
 });
+// const popUpTimeOut = setTimeout(function () {
+//   document.getElementById("popup").classList.remove("popup-active");
+// }, 5000);
