@@ -54,6 +54,4 @@ btnCopy.addEventListener("click", () => {
     document.getElementById("popup").classList.remove("popup-active");
   }, 1000);
 });
-// const popUpTimeOut = setTimeout(function () {
-//   document.getElementById("popup").classList.remove("popup-active");
-// }, 5000);
+
