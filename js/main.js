@@ -8,16 +8,15 @@ $("#genrate-btn").click(() => {
     language = $("#language").val(),
     author = $("#author").val();
 
-  let value1 = '<meta name="title" content="' + title + '"/>\n',
-    value2 = '<meta name="description" content="' + description + '"/>\n',
-    value3 = '<meta name="keywords" content="' + keywords + '"/>\n',
-    value4 = '<meta name="robots" content="' + index + ", " + follow + '"/>\n',
+  let value1 = `<meta name="title" content="${title}"/>\n`,
+    value2 = `<meta name="description" content="${description}"/>\n`,
+    value3 = `<meta name="keywords" content="${keywords}"/>\n`,
+    value4 = `<meta name="robots" content="${index}",${follow}"/>\n`,
     value5 =
-      '<meta http-equiv="Content-Type" content="text/html; charset=' +
-      sitetype +
-      '"/>\n',
-    value6 = '<meta name="language" content="' + language + '"/>\n',
-    value7 = '<meta name="author" content="' + author + '"/>';
+      `<meta http-equiv="Content-Type" content="text/html; charset=${sitetype}"/>\n`,
+    value6 = `<meta name="language" content="${language}"/>\n`,
+    // value7 = '<meta name="author" content="' + author + '"/>';
+    value7 = `<meta name="author" content="${author}"/>`;
   let value = "";
   if (title !== "") {
     value = value1;
