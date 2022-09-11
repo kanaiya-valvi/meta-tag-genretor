@@ -53,4 +53,5 @@ btnCopy.addEventListener("click", () => {
     document.getElementById("popup").classList.remove("popup-active");
   }, 1000);
 });
-
+const year = new Date().getFullYear();
+document.querySelector("#copy-year").textContent = year;

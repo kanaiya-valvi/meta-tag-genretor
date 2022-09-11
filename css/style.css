@@ -121,6 +121,13 @@
   left: 50%;
   margin: 0 auto;
 }
+.author:link,
+.author:visited {
+  color: #000;
+  /* text-decoration: none; */
+  animation: blink 2s ease alternate-reverse infinite;
+  transition: all 02s;
+}
 @media (max-width: 480px) {
   #meta-form {
     display: flex;
@@ -133,5 +140,17 @@
   .popup {
     padding: 10px 20px;
     font-size: 12px;
+  }
+}
+
+@keyframes blink {
+  0% {
+    color: #e67700;
+  }
+  50% {
+    color: #087f5b;
+  }
+  100% {
+    color: #d9480f;
   }
 }
